@@ -2,7 +2,7 @@
 const Database = require('better-sqlite3');
 const { initDb } = require('./init');
 const fs = require('fs');
-const db = new Database('servers.db', { verbose: console.log });
+const db = new Database('database/servers.db', { verbose: console.log });
 
 // Initialise db
 initDb(db);

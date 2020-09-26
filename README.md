@@ -7,9 +7,10 @@ It uses `SQLite3` to store persistent code.
 
 # Getting Started
 1. `git clone` this repository.
-2. `npm i` to install dependencies.
-3. Add `BOT_TOKEN="your discord bot token"` to a file called `.env` in the root of this project.
-4. You're ready!
+2. Install [Docker Compose](https://docs.docker.com/compose/install/).
+3. `npm i` to install dependencies.
+4. Add `BOT_TOKEN="your discord bot token"` to a file called `.env` in the root of this project.
+5. You're ready!
    * `npm run build` to transpile the code into `javascript`. Output files can be found in `./build`
    * `npm start` to run the transpiled code.
    * `npm run dev` to use `ts-node-dev` for hot-reloading during development.

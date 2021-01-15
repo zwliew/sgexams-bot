@@ -8,6 +8,7 @@
         - [Starboard Commands](#starboard-commands)
 - [Message Checker](#message-checker)
         - [Message Checker Commands](#message-checker-commands)
+- [Birthday](#birthday)
 
 # Commands
 The bot listens to commands only if you tag it. Since this bot does not require constant commands, figured this was a better solution than using prefixes since it might clash with other bots.
@@ -114,3 +115,12 @@ Command | Example | Description | Permissions
 `MsgCheckerSetResponseMsg`  | `@bot MsgCheckerSetResponseMsg [response message]` | Sets the response message to the user upon detection of blacklisted words for this server.<br> Use the string `{user}` inside the message to have the bot tag the user.<br> If no message is given, the message is resetted. | KICK_MEMBERS, BAN_MEMBERS
 `MsgCheckerGetResponseMsg`  | `@bot MsgCheckerGetResponseMsg` | Displays the response message to the user upon detection of blacklisted words for this server. | KICK_MEMBERS, BAN_MEMBERS
 `MsgCheckerSetDeleteMsg`  | `@bot MsgCheckerSetDeleteMsg {TRUE\|FALSE}` | Sets whether the bot should delete instances of blacklisted words being used. | KICK_MEMBERS, BAN_MEMBERS
+
+# Birthday
+A collection of commands related to tracking and announcing users' birthdays.
+
+Command | Example | Description | Permissions
+--- | --- | --- | ---
+`SetBirthday` | `@bot SetBirthday [DD/MM]` | Sets the user's birthday to the specified date. | None
+`ListBirthdays` | `@bot ListBirthdays [DD/MM]` | Lists the users with the specified birthday. | None
+`SetBirthdayChannel` | `@bot SetBirthdayChannel [channelId or channelTag]` | Sets the birthday announcement channel to the channel with the specified ID or tag. If no ID or tag is given, the channel is reset. | KICK_MEMBERS, BAN_MEMBERS
